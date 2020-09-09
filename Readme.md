@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алина Серова](https://up.htmlacademy.ru/htmlcss/29/user/1550905).
-* Наставник: `Неизвестно`.
+* Наставник: [Artem Ryzhov](https://htmlacademy.ru/profile/id1387905).
 
 ---
 
