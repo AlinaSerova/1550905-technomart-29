@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -28,10 +30,10 @@
       <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a><br>
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     </p>
-    <p class="header-button">
+    <div class="header-button">
       <a class="account-button account-button-login" href="">Войти</a>
-      <a class="account-button" href="">Регистрация</a>
-    </p>
+      <a class="account-button account-button-reg" href="">Регистрация</a>
+    </div>
   </section>
   <!-- Навигация -->
   <nav class="main-navigation">
@@ -77,7 +79,7 @@
   </section>
   <div>
     <!-- Здесь будет слайдер с кнопкой -->
-    <a class="button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+    <a class="button" href="catalog.html">Открыть каталог</a>
   </div>
   <section class="goods">
     <!-- Список товаров -->
@@ -88,40 +90,52 @@
         <p class="catalog-item-image">
           <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 9000">
         </p>
-        <p class="catalog-item-title">Перфоратор BOSCH BFG 9000</p>
-        <p class="catalog-item-old-price"><s>32 500 Р.</s></p>
-        <p class="catalog-item-price">25 500 Р.</p>
         <button class="catalog-button catalog-button-buy" type="button">Купить</button>
         <button class="catalog-button catalog-button-bookmarks" type="button">В закладки</button>
+        <h3>
+          <span class="catalog-item-category">Перфоратор BOSCH</span>
+          <span class="catalog-item-title">BFG 9000</span>
+        </h3>
+        <p class="catalog-item-old-price"><s>32 500 Р.</s></p>
+        <p class="catalog-item-price">25 500 Р.</p>
       </li>
       <li class="catalog-item mark-new">
         <p class="catalog-item-image">
           <img src="https://via.placeholder.com/127x112" alt="Перфоратор BOSCH BFG 3000">
         </p>
-        <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
+        <button class="catalog-button catalog-button-buy" type="button">Купить</button>
+        <button class="catalog-button catalog-button-bookmarks" type="button">В закладки</button>
+        <h3>
+          <span class="catalog-item-category">Перфоратор BOSCH</span>
+          <span class="catalog-item-title">BFG 3000</span>
+        </h3>
         <p class="catalog-item-old-price"><s>22 500 Р.</s></p>
         <p class="catalog-item-price">15 500 Р.</p>
-        <button class="catalog-button-buy" type="button">Купить</button>
-        <button class="catalog-button-bookmarks" type="button">В закладки</button>
       </li>
       <li class="catalog-item">
         <p class="catalog-item-image">
           <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSCH BFG 6000">
         </p>
-        <p class="catalog-item-title">Перфоратор BOSCH BFG 6000</p>
+        <button class="catalog-button catalog-button-buy" type="button">Купить</button>
+        <button class="catalog-button catalog-button-bookmarks" type="button">В закладки</button>
+        <h3>
+          <span class="catalog-item-category">Перфоратор BOSCH</span>
+          <span class="catalog-item-title">BFG 6000</span>
+        </h3>
         <p class="catalog-item-old-price"><s>30 500 Р.</s></p>
         <p class="catalog-item-price">25 500 Р.</p>
-        <button class="catalog-button-buy" type="button">Купить</button>
-        <button class="catalog-button-bookmarks" type="button">В закладки</button>
       </li>
       <li class="catalog-item mark-new">
         <p class="catalog-item-image">
           <img src="https://via.placeholder.com/127x112" alt="Перфоратор BOSCH BFG 2000">
         </p>
-        <p class="catalog-item-title">Перфоратор BOSCH BFG 2000</p>
+        <button class="catalog-button catalog-button-buy" type="button">Купить</button>
+        <button class="catalog-button catalog-button-bookmarks" type="button">В закладки</button>
+        <h3>
+          <span class="catalog-item-category">Перфоратор BOSCH</span>
+          <span class="catalog-item-title">BFG 2000</span>
+        </h3>
         <p class="catalog-item-price">12 500 Р.</p>
-        <button class="catalog-button-buy" type="button">Купить</button>
-        <button class="catalog-button-bookmarks" type="button">В закладки</button>
       </li>
     </ul>
   </section>
