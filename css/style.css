@@ -168,6 +168,10 @@ img {
   text-align: center;
 }
 
+.account-user-icon,
+.account-exit-icon {
+  color: var(--basic-grey);
+}
 
 /* Header - navigation section */
 
@@ -214,6 +218,10 @@ img {
 
 .breadcrumbs a {
   color: var(--basic-black);
+}
+
+.breadcrumbs-icon a {
+  color: var(--basic-grey);
 }
 
 /* Mark "NEW" */
