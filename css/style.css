@@ -349,10 +349,17 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0;
+  padding: 21px 0 20px 0;
 }
 
 .breadcrumbs li {
-  display: inline;
+  margin-right: 40px;
 }
 
 .breadcrumbs a {
@@ -559,15 +566,6 @@ img {
   column-gap: 20px;
 }
 
-.breadcrumbs {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  margin: 0;
-  padding: 21px 0 20px 0;
-}
-
 .title-for-catalog {
   grid-column-start: 1;
   grid-column-end: -1;
@@ -593,6 +591,7 @@ img {
   grid-column-end: -1;
   grid-row-start: 3;
   grid-row-end: 4;
+  display: flex;
 }
 
 .all-goods {
@@ -771,6 +770,9 @@ img {
 
 .pagination-list {
   list-style: none;
+  margin: 28px 0 59px 0;
+  padding: 0;
+  display: flex;
 }
 
 .pagination-list a {
@@ -780,12 +782,13 @@ img {
 .pagination-item {
   border: 1px solid var(--basic-grey-borderlight);
   border-radius: 2px;
-  display: inline;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  padding: 10px 15px;
+  margin-right: 20px;
 }
 
 .pagination-item:hover {
@@ -796,9 +799,11 @@ img {
   border-color: var(--basic-red);
 }
 
+.pagination-item-current {
+  background-color: var(--basic-red);
+}
 
 .pagination-item-current a {
-  background-color: var(--basic-red);
   color: var(--basic-white);
 }
 
