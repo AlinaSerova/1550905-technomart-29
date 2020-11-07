@@ -39,6 +39,7 @@
   --special-green-dark: #518534;
   --special-grey-opacity: rgba(197, 197, 197, 0.3);
   --special-beige-opacity: rgba(169, 169, 169, 0.3);
+  --special-beige: #F4F4F4;
 }
 
 /* Global */
@@ -770,7 +771,7 @@ input[type="search"]:focus ~ svg {
 
 .slider-controls button {
   padding: 0;
-  width: 11px;
+  width: 10px;
   height: 10px;
   border: 2px solid var(--basic-white);
   background-color: var(--basic-white);
@@ -1115,7 +1116,7 @@ input[type="search"]:focus ~ svg {
   content: "";
   position: absolute;
   top: 5px;
-  left: -27px;
+  left: -26px;
   width: 8px;
   height: 8px;
   background-color: var(--basic-grey);
@@ -1927,9 +1928,9 @@ input[type="search"]:focus ~ svg {
 .modal {
   background-color: var(--basic-white);
   color: var(--basic-black);
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .modal-send,
@@ -1938,7 +1939,184 @@ input[type="search"]:focus ~ svg {
   border: 0;
 }
 
-.modal-send {
-  font-family: "Cuprum", Arial, sans-serif;
+/*.modal-map,
+.modal-feedback,
+.modal-success-cart {
+  display: none;
+}*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  z-index: 25;
+  border-top: 7px solid var(--basic-red);
 }
+
+.modal-close {
+  border: none;
+  background-color: var(--basic-white-opacity);
+  position: absolute;
+  top: 14px;
+  right: 11px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/decor/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.modal-feedback {
+  top: 220px;
+  bottom: auto;
+  width: 620px;
+}
+
+.modal-feedback label {
+  padding-bottom: 11px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: var(--basic-black);
+  font-size: 13px;
+  line-height: 24px;
+  border: 1px solid var(--basic-beige-dark);
+  -webkit-appearance: none;
+  padding: 7px 12px;
+}
+
+.modal-feedback input::placeholder,
+.modal-feedback textarea {
+  color: var(--basic-beige-dark);
+
+}
+
+.modal-feedback textarea {
+  resize: none;
+  height: 114px;
+}
+
+.text-elements {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 80px;
+  margin: 0;
+  justify-content: space-between;
+  width: 460px;
+}
+
+.field-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-top: 39px;
+  width: 220px;
+}
+
+.field-textarea {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 460px;
+  padding-top: 13px;
+}
+
+.modal-send {
+  width: 460px;
+  height: 38px;
+}
+
+.modal-feedback-bar {
+  margin-top: 37px;
+  padding: 37px 80px;
+  background-color: var(--special-beige);
+}
+
+.modal-success-cart {
+  top: 220px;
+  bottom: auto;
+  width: 620px;
+}
+
+.modal-success-cart h2 {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+  margin: 66px 0 0 99px;
+  position: relative;
+  width: 420px;
+}
+
+.modal-success-cart h2:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/decor/icon-success.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-button-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 37px 112px;
+  margin: 50px 0 0 0;
+  background-color: var(--special-beige);
+}
+
+.modal-order,
+.modal-continue {
+  border: none;
+  width: 192px;
+  height: 38px;
+}
+
+.modal-send,
+.modal-order {
+  background-color: var(--basic-red);
+  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  cursor: pointer;
+}
+
+.modal-continue {
+  background-color: var(--basic-white);
+  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.modal-map {
+  top: 340px;
+  bottom: auto;
+  width: 943px;
+  height: 449px;
+}
+
+.modal-map iframe {
+  border: none;
+}
+
 
